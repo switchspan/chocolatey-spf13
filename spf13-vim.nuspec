@@ -2,16 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>spf13</id>
-    <title>spf13-vim 3.0</title>
+    <title>spf13-vim: The Ultimate Vim Distribution</title>
     <version>3.0</version>
     <authors>Steve Francia, __CHOCO_PKG_OWNER_NAME__</authors>
     <owners>__CHOCO_PKG_OWNER_NAME__</owners>
     <summary>spf13-vim is a distribution of vim plugins and resources for Vim, GVim and MacVim.
-        It is a completely cross platform distribution that stays true to the feel of vim while providing
-        modern features like a plugin management system, autocomplete, tags and tons more.</summary>
+        It is a completely cross platform distribution that stays true to the feel of vim while providing modern features like a plugin management system, autocomplete, tags and tons more. This install includes gVim 7.4</summary>
     <description>spf13-vim: The Ultimate Vim Distribution. spf13-vim is a distribution of vim plugins and resources for Vim, GVim and MacVim.
-        It is a completely cross platform distribution that stays true to the feel of vim while providing
-        modern features like a plugin management system, autocomplete, tags and tons more.</description>
+        It is a completely cross platform distribution that stays true to the feel of vim while providing modern features like a plugin management system, autocomplete, tags and tons more. This install includes gVim 7.4</description>
     <language>en-us</language>
     <projectUrl>http://vim.spf13.com/</projectUrl>
     <tags>vim editor vi</tags>
@@ -20,12 +18,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-icon.png</iconUrl>
     <dependencies>
-      <dependency id="curl" version="[7.28.1,)" />
-      <!--<dependency id="git" version="[1.8.5.2,)" />
-      <dependency id="vim" version="[7.4,)" />-->
-      <dependency id="ctags" version="[5.8.1,)" />
+      <dependency id="curl" />
+      <dependency id="git" />
+      <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Initial release of the spf12-vim package</releaseNotes>
+    <releaseNotes>Initial release of the spf13-vim package</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
