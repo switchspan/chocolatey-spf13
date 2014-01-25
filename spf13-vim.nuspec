@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>spf13-vim</id>
+    <title>spf13-vim: The Ultimate Vim Distribution</title>
+    <version>3.0</version>
+    <authors>Steve Francia, Ken Taylor</authors>
+    <owners>Ken Taylor</owners>
+    <summary>spf13-vim</summary>
+    <description>spf13-vim</description>
+    <projectUrl>http://vim.spf13.com/</projectUrl>
+    <tags>spf13-vim admin</tags>
+    <copyright></copyright>
+    <licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://raw.github.com/__CHOCO_PKG_OWNER_REPO__/master/spf13-vim/spf13-vim.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
