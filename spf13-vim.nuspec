@@ -10,10 +10,10 @@
     <description>spf13-vim</description>
     <projectUrl>http://vim.spf13.com/</projectUrl>
     <tags>spf13-vim admin</tags>
-    <copyright></copyright>
-    <licenseUrl>__REPLACE__</licenseUrl>
+    <copyright>2014 (c) Ken Taylor</copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://raw.github.com/__CHOCO_PKG_OWNER_REPO__/master/spf13-vim/spf13-vim.png</iconUrl>-->
+    <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-mac-logo.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
