@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>spf13-vim-3.0</id>
+    <id>spf13-vim</id>
     <title>spf13-vim 3.0</title>
     <version>3.0</version>
     <authors>Steve Francia, __CHOCO_PKG_OWNER_NAME__</authors>
@@ -12,17 +12,18 @@
     <description>spf13-vim: The Ultimate Vim Distribution. spf13-vim is a distribution of vim plugins and resources for Vim, GVim and MacVim.
         It is a completely cross platform distribution that stays true to the feel of vim while providing
         modern features like a plugin management system, autocomplete, tags and tons more.</description>
+    <language>en-us</language>
     <projectUrl>http://vim.spf13.com/</projectUrl>
     <tags>vim editor vi</tags>
     <copyright>2014 (c) __CHOCO_PKG_OWNER_NAME__</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-mac-logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-icon.png</iconUrl>
     <dependencies>
-      <dependency id="curl" version="7.28.1" />
-      <dependency id="git" version="1.8.5.2" />
-      <dependency id="vim" version="" />
-      <dependency id="ctags" version="" />
+      <dependency id="curl" version="[7.28.1,)" />
+      <dependency id="git" version="[1.8.5.2,)" />
+      <dependency id="vim" version="[7.4,)" />
+      <dependency id="ctags" version="[5.8.1,)" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
