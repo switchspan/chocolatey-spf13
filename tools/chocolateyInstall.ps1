@@ -3,8 +3,8 @@
 $packageName = 'spf13-vim' # arbitrary name for the package, used in messages
 $installerType = 'EXE' #only one of these: exe, msi, msu
 $url = 'https://github.com/spf13/spf13-vim/raw/3.0/spf13-vim-windows-install.cmd' # download url
-$silentArgs = '/s /q' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
-$validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
+$silentArgs = '' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
+$validExitCodes = @(0,1) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
 # main helpers - these have error handling tucked into them already
 # installer, will assert administrative rights

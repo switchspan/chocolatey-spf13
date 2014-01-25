@@ -21,8 +21,8 @@
     <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-icon.png</iconUrl>
     <dependencies>
       <dependency id="curl" version="[7.28.1,)" />
-      <dependency id="git" version="[1.8.5.2,)" />
-      <dependency id="vim" version="[7.4,)" />
+      <!--<dependency id="git" version="[1.8.5.2,)" />
+      <dependency id="vim" version="[7.4,)" />-->
       <dependency id="ctags" version="[5.8.1,)" />
     </dependencies>
     <releaseNotes>Initial release of the spf12-vim package</releaseNotes>
