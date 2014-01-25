@@ -25,7 +25,7 @@
       <dependency id="vim" version="[7.4,)" />
       <dependency id="ctags" version="[5.8.1,)" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>Initial release of the spf12-vim package</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,19 +1,18 @@
 ﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
 
 $packageName = 'spf13-vim' # arbitrary name for the package, used in messages
-$installerType = 'EXE_MSI_OR_MSU' #only one of these: exe, msi, msu
-$url = 'URL_HERE' # download url
-$url64 = 'URL_x64_HERE' # 64bit URL here or remove - if installer decides, then use $url
-$silentArgs = 'SILENT_ARGS_HERE' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
+$installerType = 'EXE' #only one of these: exe, msi, msu
+$url = 'https://github.com/spf13/spf13-vim/raw/3.0/spf13-vim-windows-install.cmd' # download url
+$silentArgs = '/s /q' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
 # main helpers - these have error handling tucked into them already
 # installer, will assert administrative rights
 # if removing $url64, please remove from here
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
 # download and unpack a zip file
 # if removing $url64, please remove from here
-Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" "$url64"
+#Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 #try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
   # other helpers - using any of these means you want to uncomment the error handling up top and at bottom.
