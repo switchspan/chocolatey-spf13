@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>spf13-vim</id>
+    <id>spf13</id>
     <title>spf13-vim 3.0</title>
     <version>3.0</version>
     <authors>Steve Francia, __CHOCO_PKG_OWNER_NAME__</authors>
