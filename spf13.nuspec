@@ -23,7 +23,7 @@
       <dependency id="git" />
       <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Initial release of package.</releaseNotes>
+    <releaseNotes>Changed vim download url from ftp to http.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
