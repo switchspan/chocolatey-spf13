@@ -3,7 +3,7 @@
   <metadata>
     <id>spf13.vim</id>
     <title>spf13.vim</title>
-    <version>3.0.1</version>
+    <version>3.0.2</version>
     <authors>Steve Francia, Bram Moolenaar, Vim Community</authors>
     <owners>Ken Taylor</owners>
     <summary>spf13-vim: The Ultimate Vim Distribution. spf13-vim is a distribution of PURE AWESOMENESS in the form of vim plugins and resources for Vim, GVim and MacVim.
@@ -11,7 +11,7 @@
     <description>spf13-vim: The Ultimate Vim Distribution. spf13-vim is a distribution of PURE AWESOMENESS in the form of vim plugins and resources for Vim, GVim and MacVim.
         It is a completely cross platform distribution that stays true to the feel of vim while providing modern features like a plugin management system, autocomplete, tags and tons more. This install includes gVim 7.4 as part of the installation.</description>
     <language>en-us</language>
-    <projectUrl>http://vim.spf13.com/</projectUrl>
+    <projectUrl>http://github.com/switchspan/chocolatey-spf13</projectUrl>
     <tags>vim editor vi</tags>
     <copyright>2014 (c) Ken Taylor</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
