@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>spf13.vim</id>
-    <title>spf13.vim</title>
+    <id>spf13</id>
+    <title>spf13-vim</title>
     <version>3.0.2</version>
     <authors>Steve Francia, Bram Moolenaar, Vim Community</authors>
     <owners>Ken Taylor</owners>
@@ -13,8 +13,7 @@
     <language>en-us</language>
     <projectUrl>http://github.com/switchspan/chocolatey-spf13</projectUrl>
     <tags>vim editor vi</tags>
-    <copyright>2014 (c) Ken Taylor</copyright>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-icon.png</iconUrl>
     <dependencies>
@@ -23,7 +22,9 @@
       <dependency id="git" />
       <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Changed vim download url from ftp to http.</releaseNotes>
+    <releaseNotes>Changed vim download url from ftp to http. 
+      Changed nuget id and title to Chocolatey naming conventions. 
+      Updated license to Apache 2.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
