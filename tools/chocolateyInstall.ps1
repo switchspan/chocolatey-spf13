@@ -1,4 +1,5 @@
-﻿$packageName = 'spf13-vim'
+﻿# Install script for spf13
+$packageName = 'spf13-vim'
 $spfUrl = 'https://github.com/spf13/spf13-vim/raw/3.0/spf13-vim-windows-install.cmd'
 $silentArgs = '/S' 
 $validExitCodes = @(0,1) 
