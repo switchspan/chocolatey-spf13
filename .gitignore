@@ -121,3 +121,4 @@ UpgradeLog*.XML
 
 # sftp configuration file
 sftp-config.json
+*.sublime-project
