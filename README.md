@@ -9,7 +9,7 @@ To install this package, you first need to have [Chocolatey NuGet][choco] instal
 
 After you have [Chocolatey][choco], run the following command from the commandline:
 
-`choco install spf13.vim`
+`choco install spf13-vim`
 
 ---
 [choco]: http://chocolatey.org/

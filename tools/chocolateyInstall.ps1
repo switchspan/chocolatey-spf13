@@ -1,4 +1,4 @@
-﻿$packageName = 'spf13.vim'
+﻿$packageName = 'spf13-vim'
 $installerType = 'EXE'
 $vimUrl = 'http://ftp.vim.org/pub/vim/pc/gvim74.exe'
 $spfUrl = 'https://github.com/spf13/spf13-vim/raw/3.0/spf13-vim-windows-install.cmd'
