@@ -23,9 +23,11 @@
       <dependency id="git" />
       <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Changed vim download url from ftp to http. 
-      Changed nuget id and title to Chocolatey naming conventions. 
-      Updated license to Apache 2.0</releaseNotes>
+    <releaseNotes>Removed download of spf13 cmd script.
+      Added local spf13 powershell install script.
+      Changed nuget id and title to Chocolatey naming conventions.
+      Updated license to Apache 2.0.
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
