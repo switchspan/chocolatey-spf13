@@ -11,11 +11,11 @@
     <description>spf13-vim: The Ultimate Vim Distribution. spf13-vim is a distribution of PURE AWESOMENESS in the form of vim plugins and resources for Vim, GVim and MacVim.
         It is a completely cross platform distribution that stays true to the feel of vim while providing modern features like a plugin management system, autocomplete, tags and tons more. This install includes gVim 7.4 as part of the installation.</description>
     <language>en-us</language>
-    <projectUrl>http://github.com/switchspan/chocolatey-spf13</projectUrl>
+    <projectUrl>http://vim.spf13.com/</projectUrl>
     <tags>vim editor vi</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-icon.png</iconUrl>
+    <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-vim.png</iconUrl>
     <dependencies>
       <dependency id="Chocolatey" version="0.9.8.20" />
       <dependency id="vim" />
