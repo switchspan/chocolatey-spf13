@@ -23,7 +23,9 @@
       <dependency id="git" />
       <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Removed download of spf13 cmd script.
+    <releaseNotes>Corrected project URL.
+      Added higher resolution icon png (512x512).
+      Removed download of spf13 cmd script.
       Added local spf13 powershell install script.
       Changed nuget id and title to Chocolatey naming conventions.
       Updated license to Apache 2.0.
