@@ -17,7 +17,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/switchspan/chocolatey-spf13/master/images/spf13-vim.png</iconUrl>
     <dependencies>
-      <dependency id="Chocolatey" version="0.9.8.20" />
       <dependency id="vim" />
       <dependency id="curl" />
       <dependency id="git" />
