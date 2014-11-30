@@ -22,8 +22,8 @@
       <dependency id="git" />
       <dependency id="ctags" />
     </dependencies>
-    <releaseNotes>Corrected project URL.
-      Added higher resolution icon png (512x512).
+    <releaseNotes>Changed png icon resolution to (128x128)
+      Corrected project URL.
       Removed download of spf13 cmd script.
       Added local spf13 powershell install script.
       Changed nuget id and title to Chocolatey naming conventions.
