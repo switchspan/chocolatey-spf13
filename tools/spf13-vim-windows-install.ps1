@@ -78,7 +78,7 @@ Try {
     {
         Write-Host "The spf13 application directory '$appDirectory' was not found."
         Set-Location $HOME
-        & $gitCommand clone --recursive -b 3.0 https://github.com/spf13/spf13-vim.git "$HOME"
+        & $gitCommand clone --recursive -b 3.0 https://github.com/spf13/spf13-vim.git "$appDirectory"
     } 
     Else
     {
