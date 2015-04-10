@@ -116,7 +116,6 @@ Try {
     # Create the symbolic links
     New-SymLink "$HOME\.vimrc" "$appDirectory\.vimrc"
     New-SymLink "$HOME\_vimrc" "$appDirectory\.vimrc"
-    New-SymLink "$HOME\_vimrc" "$appDirectory\.vimrc"
     New-SymLink "$HOME\.vimrc.fork" "$appDirectory\.vimrc.fork"
     New-SymLink "$HOME\.vimrc.bundles" "$appDirectory\.vimrc.bundles"
     New-SymLink "$HOME\.vimrc.bundles.fork" "$appDirectory\.vimrc.bundles.fork"
