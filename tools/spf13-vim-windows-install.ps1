@@ -21,25 +21,49 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 # Script Functions
-Function New-SymLink ($link, $target)
+Function New-SymLink
 {
-    If (test-path -pathtype container $target)
-    {
-        $command = "cmd /c mklink /d"
-    }
-    else
-    {
-        $command = "cmd /c mklink"
-    }
+    Param(
+        [parameter(Mandatory=$true)]
+        [String]
+        $Link,
 
-    Try 
+        [parameter(Mandatory=$true)]
+        [String]
+        $Target,
+
+        [parameter(Mandatory=$false)]
+        [ValidateSet("File", "Directory")]
+        [String]
+        $Type = "File"
+    )
+
+    # This function isn't compatible with pipeline input, so execute only once.
+    # Defining only the End block is equivalent to not defining any of the
+    # Begin, Process or End blocks.
+    End
     {
-        $ErrorActionPreference = "Stop"
-        invoke-expression "$command $link $target"
-    } 
-    Catch [System.Exception]
-    {
-        Write-Warning "Symbolic link '$link' already exists for '$target'"
+        If ($Type -eq "File")
+        {
+            $command = "cmd /c mklink"
+        }
+        # Parameter was validated as either "File" or "Directory", so it's
+        # definitely a Directory symlink.
+        Else
+        {
+
+            $command = "cmd /c mklink /d"
+        }
+
+        Try 
+        {
+            $ErrorActionPreference = "Stop"
+            invoke-expression "$command $link $target"
+        } 
+        Catch [System.Exception]
+        {
+            Write-Warning "Symbolic link '$link' already exists for '$target'"
+        }
     }
 }
 
@@ -92,13 +116,12 @@ Try {
     # Create the symbolic links
     New-SymLink "$HOME\.vimrc" "$appDirectory\.vimrc"
     New-SymLink "$HOME\_vimrc" "$appDirectory\.vimrc"
-    New-SymLink "$HOME\_vimrc" "$appDirectory\.vimrc"
     New-SymLink "$HOME\.vimrc.fork" "$appDirectory\.vimrc.fork"
     New-SymLink "$HOME\.vimrc.bundles" "$appDirectory\.vimrc.bundles"
     New-SymLink "$HOME\.vimrc.bundles.fork" "$appDirectory\.vimrc.bundles.fork"
     New-SymLink "$HOME\.vimrc.before" "$appDirectory\.vimrc.before"
     New-SymLink "$HOME\.vimrc.before.fork" "$appDirectory\.vimrc.before.fork"
-    New-SymLink "$HOME\.vim" "$appDirectory\.vim"
+    New-SymLink "$HOME\.vim" "$appDirectory\.vim" "Directory"
 
     # Check to see If the bundle directory exists, if not, create it
     If (-Not (Test-Path $bundleDirectory))
