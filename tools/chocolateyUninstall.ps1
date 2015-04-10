@@ -8,10 +8,28 @@ function Test-ReparsePoint([string]$path) {
   return [bool]($file.Attributes -band [IO.FileAttributes]::ReparsePoint)
 }
 
+function Test-SymLinkTargetsSpf13Directory([string]$Path)
+{
+    # PowerShell can't deal with symlinks. Call cmd.exe's dir, parse the output
+    # and return true if there are any objects returned.
+    # The regular expression checks if the symlink points to the .spf13-vim
+    # directory in the user's directory, i.e. the symlink is from when the user
+    # installed spf13-vim.
+    # For example, a .vimrc symlink that still points to the .spf13-vim
+    # directory looks like the following:
+    # 10/04/2015  18:39    <SYMLINK>      .vimrc [C:\Users\john\.spf13-vim-3\.vimrc]
+    return (cmd /c dir $Path `
+                | Select-String -Pattern "\[$([regex]::Escape($HOME))\\\.spf13\-vim\-3.+\]$" `
+                | Measure `
+                | select -ExpandProperty Count) `
+            -gt 0
+}
+
 function Remove-SymLink([string]$path)
 {
-    # Only remove if it's a symlink.
-    If (Test-ReparsePoint $path)
+    # If the symlink doesn't target the spf13-vim directory the user might have
+    # repurposed it, so we shouldn't delete it.
+    If ((Test-ReparsePoint $path) -and (Test-SymLinkTargetsSpf13Directory $path))
     {
         If (Test-Path -PathType Container $path)
         {
